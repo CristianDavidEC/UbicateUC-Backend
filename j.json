@@ -1,0 +1,29 @@
+[
+    {
+        "nombre": "Sala J",
+        "descripcion": "Sala de Sistemas",
+        "latitud": "0.00001",
+        "longitud": "0.00001",
+        "tipo": "Salon",
+        "sede": "001",
+        "estado": "Disponible"
+      },
+      {
+        "nombre": "Baño B3",
+        "descripcion": "Baño del piso 3 del edicio principal",
+        "latitud": "0.00002",
+        "longitud": "0.00002",
+        "tipo": "Baño",
+        "sede": "0001",
+        "estado": "Disponible"
+      },
+      {
+        "nombre": "Sala de prueba",
+        "descripcion": "prueba de crear",
+        "latitud": "000.dadadaf.a",
+        "longitud": "039093eqwjaa",
+        "tipo": "Prueba",
+        "sede": "1",
+        "estado": "Cerrado"
+      }
+]
