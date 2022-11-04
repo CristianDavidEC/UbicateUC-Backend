@@ -12,6 +12,8 @@ def sitio_entity(item) -> dict:
         'piso': item['piso']
     }
 
+def sitio(item) -> list:
+    return [sitio_entity(item)]
 
 def sitios_all(items) -> list:
     return [sitio_entity(item) for item in items]

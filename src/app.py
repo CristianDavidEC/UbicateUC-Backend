@@ -1,6 +1,7 @@
 from fastapi import FastAPI
-from routes.SitiosRoutes import sitio
 from fastapi.middleware.cors import CORSMiddleware
+
+from routes.SitiosRoutes import sitio
 
 app = FastAPI(
   title="Backend UbicateUC, semillero de investigacion SOLID",
