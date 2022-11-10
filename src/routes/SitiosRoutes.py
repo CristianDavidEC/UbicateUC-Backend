@@ -16,8 +16,12 @@ sitio = APIRouter()
            status_code=status.HTTP_200_OK,
            response_model=list[Sitio]
            )
-async def get_all_sitios(tipo: str = None, nombre: str = None):
-    all_sitios = get_all_sites(tipo, nombre)
+async def get_all_sitios(tipo: str = '', nombre: str = ''):
+    object_query = {
+        "tipo": tipo,
+        "nombre": nombre
+    }
+    all_sitios = get_all_sites(object_query)
     return sitios_all(all_sitios)
 
 
