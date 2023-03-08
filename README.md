@@ -19,4 +19,36 @@ Para realizar la instalacion y ejecucion del proyecto siga los siguientes pasos:
     py -m venv venv
 ```
 
-- Active el entorno virtual del proyecto
+- Active el entorno virtual del proyecto si esta en la terminal de windows con el siguiente comando.
+
+```
+    venv\Scripts\activate
+```
+
+Si esta en la terminal de linux o mac con el siguiente comando.
+
+```
+    source venv/bin/activate
+```
+
+- Una vez activado el entorno virtual, instale las dependencias del proyecto con el siguiente comando.
+
+```
+    pip install -r requirements.txt
+```
+
+Esto realizara la instalacion de las dependencias del proyecto.
+
+- Solicite el archivo .env al administrador del proyecto y coloque el archivo en la carpeta raiz del proyecto. Este archivo contine las variables de entorno del proyecto y la cadena de conexion a la base de datos.
+
+- Desde la terminal abra la carpeta src, y ejecute el siguiente comado
+
+```
+    uvicorn main:app --reload
+```
+
+Este iniciara el servidor y los servicios Rest que ya existen.
+
+- Una vez lanzado el servidor correctamente entre a su localhost o la direccion que su equipo definio.
+
+- Con el http://127.0.0.1:8000/docs puede entrar a ver la documentacion de los endpoins.
