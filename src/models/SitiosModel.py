@@ -13,4 +13,3 @@ class Sitio(BaseModel):
     estado: str = Field(...)
     bloque: str = Field(...)
     piso: str = Field(...)
-

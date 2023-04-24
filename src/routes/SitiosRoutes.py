@@ -11,13 +11,15 @@ from handlers.SitesHandlers import *
 
 sitio = APIRouter()
 
+
 @sitio.post("/sitios",
-            tags = ["Sitios"],
-            status_code = status.HTTP_201_CREATED,
+            tags=["Sitios"],
+            status_code=status.HTTP_201_CREATED,
             response_model=list[Sitio])
 async def crearSitio(sitio: Sitio = Body(...)):
     sitio_return = createSite(sitio)
     return [sitio_entity(sitio_return)]
+
 
 @sitio.get("/sitios",
            tags=["Sitios"],
@@ -48,4 +50,3 @@ async def get_sitio(id: str):
 @sitio.get("/", tags=["Default"], status_code=status.HTTP_200_OK)
 async def get_nan():
     return ""
-
